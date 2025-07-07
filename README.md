@@ -52,6 +52,12 @@ https://github.com/user-attachments/assets/8ca2b8bd-8c06-4d3b-9d88-964bd6befd11
 
 - Attempt to observe the ticket again as "john". Can you view or change it?
 
+  
+
+https://github.com/user-attachments/assets/01e08e48-b806-42f1-a98f-8201f618c2f8
+
+
+
 ### As Help Desk Agent "jane"
 
 - Work the ticket to completion
