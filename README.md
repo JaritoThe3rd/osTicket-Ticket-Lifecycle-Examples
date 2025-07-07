@@ -32,6 +32,12 @@ Simulate real-world help desk workflows by:
 - Create a ticket with the following issue:  
   "Entire mobile/online banking system is down"
 
+  
+
+https://github.com/user-attachments/assets/8ca2b8bd-8c06-4d3b-9d88-964bd6befd11
+
+
+
 ### As Help Desk Agent "john"
 
 - Observe ticket properties:
