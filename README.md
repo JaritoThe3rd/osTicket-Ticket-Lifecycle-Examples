@@ -1,54 +1,147 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+# osTicket Ticket Lifecycle Lab
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
+## Login Pages
 
+- Admin/Analyst Login:  
+  http://localhost/osTicket/scp/login.php
 
-<h2>Video Demonstration</h2>
+- End User Portal:  
+  http://localhost/osTicket
 
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
+## Objective
 
-<h2>Environments and Technologies Used</h2>
+Simulate real-world help desk workflows by:
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+- Creating tickets as end users
+- Observing and modifying ticket properties
+- Assigning SLAs and departments
+- Resolving tickets as help desk agents
+- Understanding access control and escalation processes
 
-<h2>Operating Systems Used </h2>
+## Initial Setup
 
-- Windows 10</b> (21H2)
+1. Change the "SysAdmins" Department to a Top Level Department.
+2. Delete the "Maintenance" Department (do not archive).
 
-<h2>Ticket Lifecycle Stages</h2>
+---
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+## Ticket 1: Entire Mobile/Online Banking System is Down
 
-<h2>Lifecycle Stages</h2>
+### As an End User
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+- Create a ticket with the following issue:  
+  "Entire mobile/online banking system is down"
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### As Help Desk Agent "john"
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+- Observe ticket properties:
+  - Priority
+  - Department
+  - SLA
+  - Assigned To
+
+- Set the following properties:
+  - SLA: Sev-A (1 hour, 24/7)
+  - Department: Online Banking
+
+- Attempt to observe the ticket again as "john". Can you view or change it?
+
+### As Help Desk Agent "jane"
+
+- Work the ticket to completion
+
+---
+
+## Ticket 2: Adobe Upgrade Request
+
+### As an End User
+
+- Create a ticket with the following issue:  
+  "Accounting department needs Adobe upgrade, broken"
+
+### As Help Desk Agent "john"
+
+- Observe ticket properties:
+  - Priority
+  - Department
+  - SLA
+  - Assigned To
+
+- Set the following properties:
+  - SLA: Sev-B (4 hours, 24/7)
+  - Department: Support
+
+- Work the ticket to completion
+
+---
+
+## Ticket 3: CFO’s Laptop Will Not Turn On
+
+### As an End User
+
+- Create a ticket with the following issue:  
+  "CFO’s laptop will no longer turn on"
+
+### As Help Desk Agent "john"
+
+- Observe ticket properties:
+  - Priority
+  - Department
+  - SLA
+  - Assigned To
+
+- Set the following properties:
+  - SLA: Sev-B (4 hours, 24/7)
+  - Department: Support
+
+- Work the ticket to completion
+
+---
+
+## SLA Escalation and Access Control
+
+- Set all ticket properties; ensure SysAdmins ticket is set to Sev-A
+- Observe the ticket becomes inaccessible to agent "john"
+- As Admin:
+  - Assign "View-only" access to SysAdmins department
+- Switch back to agent panel:
+  - Observe escalated ticket
+  - Note that you can no longer make changes
+
+- Solve all tickets
+
+---
+
+## Ticket Communication Features
+
+Most ticketing systems, including osTicket, support email notifications.  
+Each time a ticket is updated, the end user receives an email update and can respond through that email.
+
+---
+
+## Real-World Ticket Intake
+
+In real-world environments, tickets may originate from:
+
+- Phone calls
+- Chat applications
+- Emails
+- Web forms
+- In-person requests
+
+While quick fixes on-the-spot are common, it is essential to log all issues into the ticketing system. This builds data for reporting and helps track team metrics.
+
+---
+
+## Finishing Up and Additional Practice
+
+- osTicket includes many more features not covered here
+- Practice this lab multiple times until familiar with the full lifecycle
+- Explore the email notification feature
+- Use this checklist to reinforce your technical support process
+
+---
+
+## Technical Skill Development
+
+Repetition builds technical intuition. This lab supports the foundational pillar of technical ability. Re-do the exercise until you can complete it without assistance.
