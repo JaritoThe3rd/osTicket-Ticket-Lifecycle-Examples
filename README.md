@@ -89,6 +89,10 @@ https://github.com/user-attachments/assets/bfd3d113-8ed0-460e-8953-065d43a17b23
 
 - Work the ticket to completion
 
+  
+https://github.com/user-attachments/assets/99b0a995-d591-4492-8ae3-3de5210fe533
+
+
 ---
 
 ## Ticket 3: CFO’s Laptop Will Not Turn On
@@ -111,6 +115,10 @@ https://github.com/user-attachments/assets/bfd3d113-8ed0-460e-8953-065d43a17b23
   - Department: Support
 
 - Work the ticket to completion
+
+
+https://github.com/user-attachments/assets/e568597b-c030-4274-a1db-35a2705c2681
+
 
 ---
 
